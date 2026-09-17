@@ -188,6 +188,10 @@ h3 {
 }
 
 .app-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
   padding: 8px 18px;
   background: var(--ink);
   border-top: 6px solid var(--hilite);
@@ -195,6 +199,37 @@ h3 {
   font-family: var(--mono);
   font-size: 10.5px;
   letter-spacing: 0.02em;
+}
+
+.app-footer__note {
+  margin: 0;
+  min-width: 0;
+}
+
+.app-footer__credit {
+  flex: none;
+  margin: 0;
+  padding: 3px 8px;
+  border: 2px solid var(--ink);
+  background: var(--hilite);
+  box-shadow: 3px 3px 0 var(--paper);
+  color: var(--ink);
+  font-size: 10px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.app-footer__credit strong {
+  font-weight: 700;
+}
+
+@media (max-width: 900px) {
+  .app-footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
 }
 
 /* ── Buttons & shared primitives ───────────────────────────── */

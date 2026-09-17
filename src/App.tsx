@@ -139,9 +139,14 @@ export default function App() {
       </main>
 
       <footer className="app-footer">
-        Front-end demonstration of product and UX decisions — in-memory seeded data, no backend,
-        no authentication, no vendor integration. Scores stand in for the automated assessment
-        import.
+        <p className="app-footer__note">
+          Front-end demonstration of product and UX decisions — in-memory seeded data, no backend,
+          no authentication, no vendor integration. Scores stand in for the automated assessment
+          import.
+        </p>
+        <p className="app-footer__credit">
+          Made by <strong>elfandrifitrah</strong> for SQE case study assignment
+        </p>
       </footer>
     </div>
   );
