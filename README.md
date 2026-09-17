@@ -4,6 +4,11 @@
 A running, interactive front-end of the product defined across Tasks 1–6, with the **reviewer
 screening workspace** as the required screen.
 
+**Live:** https://elfandrifitrah.github.io/sqe-registration-portal/ — deployed from `main` by the
+workflow in `.github/workflows/deploy-pages.yml`, which only publishes if the tests pass.
+
+Or run it locally:
+
 ```
 npm install
 npm run dev      # → http://localhost:5173
@@ -14,6 +19,7 @@ Also available:
 ```
 npm run build    # typecheck + production bundle into dist/
 npm run preview  # serve the built bundle
+npm run build:pages  # same, with the /sqe-registration-portal/ base GitHub Pages needs (CI uses this)
 npm test         # 21 unit tests over the filtering, duplicate and decision logic
 ```
 
